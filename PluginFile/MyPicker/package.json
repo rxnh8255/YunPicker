@@ -28,8 +28,5 @@
     "url": "https://github.com/rxnh8255/ChinaPicker/issues"
   },
   "homepage": "https://github.com/rxnh8255/ChinaPicker#readme",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  "license": "MIT"
 }
