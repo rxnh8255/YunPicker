@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B655C30E-8DD4-4FF7-8053-C5098CF3994A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PluginFile</RootNamespace>
+    <AssemblyName>PluginFile</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MyPicker\package-lock.json" />
+    <None Include="MyPicker\package.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyPicker\plugin.xml" />
+    <Content Include="MyPicker\src\android\com\blanktract\ChinaPicker\ChinaPicker.java" />
+    <Content Include="MyPicker\src\android\com\blanktract\ChinaPicker\FakeR.java" />
+    <Content Include="MyPicker\src\android\Library\res\anim\image_pop_in.xml" />
+    <Content Include="MyPicker\src\android\Library\res\drawable-hdpi\icon.png" />
+    <Content Include="MyPicker\src\android\Library\res\drawable-hdpi\image_bg.9.png" />
+    <Content Include="MyPicker\src\android\Library\res\drawable-hdpi\loading_icon.png" />
+    <Content Include="MyPicker\src\android\Library\res\drawable-ldpi\icon.png" />
+    <Content Include="MyPicker\src\android\Library\res\drawable-mdpi\icon.png" />
+    <Content Include="MyPicker\src\android\Library\res\drawable-mdpi\ic_action_discard_dark.png" />
+    <Content Include="MyPicker\src\android\Library\res\drawable-mdpi\ic_action_discard_light.png" />
+    <Content Include="MyPicker\src\android\Library\res\drawable-mdpi\ic_action_done_dark.png" />
+    <Content Include="MyPicker\src\android\Library\res\drawable-mdpi\ic_action_done_light.png" />
+    <Content Include="MyPicker\src\android\Library\res\drawable-mdpi\ic_launcher.png" />
+    <Content Include="MyPicker\src\android\Library\res\drawable-xhdpi\ic_action_discard_dark.png" />
+    <Content Include="MyPicker\src\android\Library\res\drawable-xhdpi\ic_action_discard_light.png" />
+    <Content Include="MyPicker\src\android\Library\res\drawable-xhdpi\ic_action_done_dark.png" />
+    <Content Include="MyPicker\src\android\Library\res\drawable-xhdpi\ic_action_done_light.png" />
+    <Content Include="MyPicker\src\android\Library\res\drawable-xhdpi\ic_launcher.png" />
+    <Content Include="MyPicker\src\android\Library\res\drawable\grid_background.xml" />
+    <Content Include="MyPicker\src\android\Library\res\layout\actionbar_custom_view_done_discard.xml" />
+    <Content Include="MyPicker\src\android\Library\res\layout\actionbar_discard_button.xml" />
+    <Content Include="MyPicker\src\android\Library\res\layout\actionbar_done_button.xml" />
+    <Content Include="MyPicker\src\android\Library\res\layout\multiselectorgrid.xml" />
+    <Content Include="MyPicker\src\android\Library\res\values-zh\multiimagechooser_strings_zh.xml" />
+    <Content Include="MyPicker\src\android\Library\res\values\multiimagechooser_strings_en.xml" />
+    <Content Include="MyPicker\src\android\Library\res\values\themes.xml" />
+    <Content Include="MyPicker\src\android\Library\src\ImageFetcher.java" />
+    <Content Include="MyPicker\src\android\Library\src\MultiImageChooserActivity.java" />
+    <Content Include="MyPicker\www\ChinaPicker.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

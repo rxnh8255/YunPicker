@@ -1,0 +1,35 @@
+{
+  "name": "chinapicker",
+  "version": "0.0.1",
+  "description": "this is a imagepick for chinese",
+  "cordova": {
+    "id": "cordova-plugin-china-picker",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rxnh8255/ChinaPicker.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "blank",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/rxnh8255/ChinaPicker/issues"
+  },
+  "homepage": "https://github.com/rxnh8255/ChinaPicker#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
